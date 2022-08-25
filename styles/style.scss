@@ -229,6 +229,36 @@
         }
       }
     }
+    &--fifth {
+      display: grid;
+      place-content: center;
+      gap: 0.9rem;
+      margin-top: 6.25rem;
+      background-color: $primary-green;
+      padding: 3.125em 1em;
+      color: $primary-light;
+      &__img--container {
+        display: none;
+      }
+      &__information {
+        display: grid;
+        grid-template: max-content / repeat(1, 1fr);
+        gap: 0.9rem;
+        &--container {
+          display: grid;
+          gap: 0.9375rem;
+        }
+        &__description {
+          padding-top: 0.3em;
+          font-size: #{"clamp(0.6rem, 2.8vw, 1rem)"};
+        }
+      }
+      &__button {
+        justify-self: center;
+        margin: 0.938rem 0 0 0;
+        padding: 0.7em 0.8em;
+      }
+    }
   }
 }
   }
@@ -246,6 +276,24 @@
     }
   }
 }
+
+@media screen and (min-width: 28.75em) {
+  .page {
+    &__section {
+      &--fifth {
+        align-content: center;
+        justify-content: start;
+        margin-top: 9.375rem;
+        &__information {
+          grid-template: max-content / repeat(2, 1fr);
+          gap: 1.875rem 2.5rem;
+          max-width: 70ch;
+        }
+        &__button {
+          justify-self: start;
+        }
+      }
+    }
   }
 }
 
@@ -274,6 +322,26 @@
   }
 }
 
+@media screen and (min-width: 54.375em) {
+  .page {
+    &__section {
+      &--fifth {
+        margin-top: 15.625rem;
+        background: url("../assets/images/full_service_desktop.png") 10% 100%
+          no-repeat $primary-light;
+        padding: 3.125em 0 3.125em 19.375em;
+        &__img {
+          position: relative;
+          bottom: 13.1875rem;
+          &--container {
+            display: block;
+            position: absolute;
+            left: -33.125rem;
+          }
+        }
+      }
+    }
+  }
   }
 }
 
@@ -366,6 +434,14 @@
           }
         }
       }
+      &--fifth {
+        &__img {
+          bottom: 12.125rem;
+        }
+        &__button {
+          padding: 0.9375em 3.125em;
+        }
+      }
     }
   }
 }
@@ -375,6 +451,12 @@
     &__section {
       &--first {
         background-position: 100%;
+      }
+      &--fifth {
+        padding: 3.125em 0 3.125em 43.75em;
+        &__img--container {
+          left: -12.5rem;
+        }
       }
     }
   }
