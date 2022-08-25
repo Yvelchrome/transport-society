@@ -392,6 +392,39 @@
         }
       }
     }
+    &--seventh {
+      margin-top: 3.125rem;
+      &__agencies {
+        background-color: $primary-light;
+        padding: 0 0.6em 0 0.6em;
+        &__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 0.3125rem;
+          padding: 1.5em 0 1.5em 1.5em;
+          &--main {
+            background-color: $secondary-light;
+          }
+        }
+        &__description {
+          font-size: #{"clamp(0.5rem, 3.8vw, .9375rem)"};
+        }
+        .line {
+          background-color: $secondary-light;
+          height: 1px;
+        }
+        .image-container {
+          position: absolute;
+          left: 90%;
+        }
+      }
+      &__map {
+        background-color: $secondary-light;
+        max-width: 100%;
+        min-height: 25rem;
+      }
+    }
   }
 }
   }
@@ -613,6 +646,29 @@
           &__button {
             justify-self: start;
           }
+        }
+      }
+      &--seventh {
+        &__agencies {
+          position: absolute;
+          z-index: 1;
+          padding: 0;
+          &--container {
+            position: relative;
+            top: 3.125rem;
+            left: 3.125rem;
+          }
+          &__item {
+            width: 33.4375rem;
+          }
+          .image-container {
+            position: absolute;
+            left: 95%;
+          }
+        }
+        &__map {
+          z-index: 0;
+          min-height: 43.125rem;
         }
       }
     }

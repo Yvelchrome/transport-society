@@ -11,6 +11,12 @@
     <link rel="icon" type="image/svg" href="./assets/images/favicon.svg" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./script/main.js" async></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB80Bd0BgcrdE-qc14uPu2XsyyOad0NkM8&callback=initMap"
+      type="text/javascript"
+      async
+      defer
+    ></script>
     <title>Transport society</title>
   </head>
   <body>
@@ -505,6 +511,73 @@
             class="page__section--sixth__form__button span-col2"
           />
         </form>
+      </section>
+      <section
+        aria-labelledby="our-agencies"
+        class="page__section page__section--seventh"
+        id="our-agencies"
+      >
+        <div class="page__section--seventh__agencies--container">
+          <ul class="page__section--seventh__agencies">
+            <li
+              class="page__section--seventh__agencies__item page__section--seventh__agencies__item--main"
+            >
+              <h3 class="page__section--seventh__agencies__title">
+                Our agencies in South Africa
+              </h3>
+              <p class="page__section--seventh__agencies__description">
+                Contact : Jacobus Van Niekerk <br />
+                Telephone: +27 67 674 0573
+              </p>
+            </li>
+            <li class="page__section--seventh__agencies__item">
+              <h3 class="page__section--seventh__agencies__title">
+                Johannesburg
+              </h3>
+              <p class="page__section--seventh__agencies__description">
+                99 Skew Road, 1459, <br />
+                Boksburg, Gauteng
+              </p>
+              <span class="image-container"
+                ><img
+                  src="./assets/images/arrow_two.svg"
+                  alt=""
+                  class="page__section--seventh__agencies__arrow"
+              /></span>
+            </li>
+            <li class="line"></li>
+            <li class="page__section--seventh__agencies__item">
+              <h3 class="page__section--seventh__agencies__title">Durban</h3>
+              <p class="page__section--seventh__agencies__description">
+                Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill
+                <br />
+                4071, Durban, KZN
+              </p>
+              <span class="image-container"
+                ><img
+                  src="./assets/images/arrow_two.svg"
+                  alt=""
+                  class="page__section--seventh__agencies__arrow"
+              /></span>
+            </li>
+            <li class="line"></li>
+            <li class="page__section--seventh__agencies__item">
+              <h3 class="page__section--seventh__agencies__title">Cape Town</h3>
+              <p class="page__section--seventh__agencies__description">
+                111 Kruis Road, Brackenfell, <br />
+                7560, Cape Town, Western Cape
+              </p>
+              <span class="image-container">
+                <img
+                  src="./assets/images/arrow_two.svg"
+                  alt=""
+                  class="page__section--seventh__agencies__arrow"
+                />
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="page__section page__section--seventh__map" id="map"></div>
       </section>
     </main>
   </body>
