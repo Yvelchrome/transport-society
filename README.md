@@ -28,6 +28,8 @@ I had to integrate and respect the design as closely as possible and imagine and
 
 - Figma model : https://www.figma.com/file/JHpfKTPTi4VyQvBjIbAvYf/TEST-INTE?node-id=0%3A1
 - Live Site URL : https://transport-society-yvelchrome.netlify.app
+  <br/>
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/558bb020-fe2e-4d19-a0dd-978910221adb/deploy-status)](https://app.netlify.com/sites/transport-society-yvelchrome/deploys)
 
 ### Screenshots
 
