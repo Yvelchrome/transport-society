@@ -112,6 +112,56 @@
   }
 }
 
+.page {
+  &__section {
+    &--first {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      background-color: $primary-green;
+      padding: 3.125em 1.3em;
+      max-width: 100%;
+      color: $primary-light;
+      &__title {
+        max-width: 16ch;
+      }
+      &__description {
+        width: #{"clamp(30ch, 60%, 44ch)"};
+        font-size: #{"clamp(0.8rem, 0.8rem + 0.333vw, 1.1rem)"};
+      }
+      &__button {
+        align-self: flex-start;
+        margin-top: 0.9rem;
+        padding: 0.8em 2em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .page {
+    &__section {
+      &--first {
+        background: url("../assets/images/first_section_container.png") 55% 100%
+          no-repeat $primary-green;
+        &__button {
+          padding: 0.9375rem 3em;
+        }
+      }    
+    }
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .page {
+    &__section {
+      &--first {
+        background-position: 100%;
+      }
+    }
+  }
+}
+
 // Hamburger menu : tablet / small resolution desktop
 @media screen and (min-width: 31.25em) and (max-width: 83.0625em) {
   .navbar {
