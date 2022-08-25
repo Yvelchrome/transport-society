@@ -52,7 +52,7 @@ I had to integrate and respect the design as closely as possible and imagine and
     ```css
     max-width: 60ch;
     ```
-  - Setting a width or height of a grid element to it's `max-content`.
+  - Setting a width or height of a grid element to it's `max-content` :
 
     ```css
     grid-template: max-content/repeat(3, max-content);
@@ -60,14 +60,15 @@ I had to integrate and respect the design as closely as possible and imagine and
 
     I kept using pixels or percentages to try to find the best width or height for each element but this is a way better solution; the element can take the space it needs without having to shrink or make its container take too much empty space. (since it doesn't adapt to the screen width however, it's needed to pay attention for it to not overflow.)
 
-  - Using the clamp function to resize a length, a width or a font-size dynamically according to the screen width :
+  - Using the `clamp` function to resize a length, a width or a font-size dynamically according to the screen width :
 
     ```css
     font-size: clamp(0.5rem, 3.8vw, 0.9375rem);
     ||
     width: clamp(30ch, 60%, 44ch);
 
-    /* If using a preprocessor like sass/scss, you can use the following syntax since those functions (min / max / clamp ) are not recognized when compiling as written above */
+    /* If using a preprocessor like sass/scss, you can use the following syntax since those functions
+    (min / max / clamp ) are not recognized when compiling as written above */
 
     font-size: #{"clamp(0.5rem, 3.8vw, 0.9375rem)"};
     ||
@@ -83,9 +84,9 @@ I had to integrate and respect the design as closely as possible and imagine and
 
 ### To-do list
 
-- Change the image of the hero header and the third section automatically based on a timer
-- Make the map interactive (zooming on the locations when clicking on the markers or their corresponding “buttons”)
-- Make the dropdown menu work for both the desktop and mobile navbar
+- Change the image of the hero header and the third section automatically based on a timer.
+- Make the map interactive (zooming on the locations when clicking on the markers or their corresponding “buttons”).
+- Make the dropdown menu work for both the desktop and mobile navbar.
 
 ## Me!
 
