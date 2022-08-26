@@ -1,8 +1,8 @@
-const hamburger = document.querySelector(".navbar__hamburger");
-const navbar = document.querySelector(".navbar");
-const navbarLinks = document.querySelector(".navbar__links");
-
 function triggerHamburger() {
+  const hamburger = document.querySelector(".navbar__hamburger");
+  const navbar = document.querySelector(".navbar");
+  const navbarLinks = document.querySelector(".navbar__links");
+
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navbar.classList.toggle("mobile-navbar--active");
