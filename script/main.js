@@ -281,6 +281,7 @@ function initMap() {
     center: southAfrica,
     zoom: 5,
     styles: style,
+    disableDefaultUI: true,
   };
 
   const map = new google.maps.Map(selector, options);
