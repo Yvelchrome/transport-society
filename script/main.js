@@ -1,3 +1,22 @@
+let image = document.getElementById("third__section__img");
+let images = {
+  imgArray: [
+    "../assets/images/third_section/third_section_image_1.webp",
+    "../assets/images/third_section/third_section_image_2.webp",
+  ],
+};
+
+let counter = 0;
+function changeImg() {
+  if (counter > 1) {
+    counter = 0;
+  }
+  image.srcset = images.imgArray[counter];
+  counter++;
+  console.log(counter);
+}
+setInterval(changeImg, 10000);
+
 function triggerHamburger() {
   const hamburger = document.querySelector(".navbar__hamburger");
   const navbar = document.querySelector(".navbar");
