@@ -1,4 +1,4 @@
-![Subskill](https://user-images.githubusercontent.com/55931217/186774951-b94f2b17-c3ba-47bb-94c2-65de4f9bbf4a.png)
+![Subskill](https://user-images.githubusercontent.com/55931217/186802105-f71784a4-2e7f-405e-bb19-3512f81b3acb.png)
 
 # Subskill - Transport Society
 
@@ -18,22 +18,22 @@
 
 ## About
 
-This is a web integration exercise that I realized from a desktop model which was provided to me by the company Subskill; it's a technical test that have for goal to validate my knowledge from a front-end point of view (precise integration, respect of the creation, animation, …).
+This is a web integration exercise that I realized from a desktop mockup which was provided to me by the company Subskill; it's a technical test that have for goal to validate my knowledge from a front-end point of view (precise integration, respect of the creation, animation, …).
 <br/><br/>
-I had to integrate and respect the design as closely as possible and imagine and then make the page fully responsive without a model provided beforehand
+I had to integrate and respect the design as closely as possible and imagine and then make the page fully responsive without a mockup provided beforehand
 
 ## Overview
 
 ### Links
 
-- Figma model : https://www.figma.com/file/JHpfKTPTi4VyQvBjIbAvYf/TEST-INTE?node-id=0%3A1
+- Figma : https://www.figma.com/file/JHpfKTPTi4VyQvBjIbAvYf/TEST-INTE?node-id=0%3A1
 - Live Site URL : https://transport-society-yvelchrome.netlify.app
   <br/>
   [![Netlify Status](https://api.netlify.com/api/v1/badges/558bb020-fe2e-4d19-a0dd-978910221adb/deploy-status)](https://app.netlify.com/sites/transport-society-yvelchrome/deploys)
 
 ### Screenshots
 
-![Desktop ver.](https://user-images.githubusercontent.com/55931217/186775240-470a3642-b5a6-4336-883d-58957527c0df.png)
+![Desktop ver.](https://user-images.githubusercontent.com/55931217/186802101-a7cf8f96-e465-41ef-9bb5-73702f339b05.png)
 
 ## My process
 
