@@ -85,7 +85,6 @@ I had to integrate and respect the design as closely as possible and imagine and
 ### To-do list
 
 - Change the image of the hero header and the third section automatically based on a timer.
-- Make the map interactive (zooming on the locations when clicking on the markers or their corresponding “buttons”).
 - Make the dropdown menu work for both the desktop and mobile navbar.
 
 ## Me!

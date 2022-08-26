@@ -45,7 +45,12 @@ triggerCountry();
 
 function initMap() {
   const selector = document.getElementById("map");
-  const southAfrica = { lat: -30.770403, lng: 23.787308 };
+  const locations = {
+    southAfrica: { lat: -30.770403, lng: 23.787308 },
+    johannesburg: { lat: -26.194705396783018, lng: 28.279971157902796 },
+    durban: { lat: -29.761555, lng: 31.026951 },
+    capeTown: { lat: -33.878537, lng: 18.700342 },
+  };
   const style = [
     {
       elementType: "geometry",
@@ -272,30 +277,57 @@ function initMap() {
       ],
     },
   ];
-  const icons = {
+  const markers = {
     marker: {
       icon: "../assets/images/marker.svg",
     },
   };
   const options = {
-    center: southAfrica,
-    zoom: 5,
+    center: locations.southAfrica,
+    zoom: 6,
     styles: style,
     disableDefaultUI: true,
   };
 
   const map = new google.maps.Map(selector, options);
 
-  function marker(lat, lng) {
+  function marker(location) {
     const marker = new google.maps.Marker({
-      position: { lat: lat, lng: lng },
+      position: { lat: location.lat, lng: location.lng },
       map: map,
-      icon: icons.marker.icon,
+      icon: markers.marker.icon,
+    });
+    marker.addListener("click", () => {
+      map.setZoom(10);
+      map.setCenter(marker.getPosition());
     });
   }
-  marker(-26.194705396783018, 28.279971157902796);
-  marker(-29.761555, 31.026951);
-  marker(-33.878537, 18.700342);
+
+  marker(locations.johannesburg);
+  marker(locations.durban);
+  marker(locations.capeTown);
+
+  const firstLocation = document.getElementById("firstLocation");
+  const secondLocation = document.getElementById("secondLocation");
+  const thirdLocation = document.getElementById("thirdLocation");
+
+  function changeCenter(location) {
+    map.setZoom(20);
+    map.setCenter(location);
+    marker.setPosition(location);
+  }
+
+  firstLocation.addEventListener("click", (e) => {
+    changeCenter(locations.johannesburg);
+  });
+
+  secondLocation.addEventListener("click", (e) => {
+    changeCenter(locations.durban);
+  });
+
+  thirdLocation.addEventListener("click", (e) => {
+    changeCenter(locations.capeTown);
+  });
 }
 
 initMap();
