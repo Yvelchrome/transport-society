@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,10 @@
     <link rel="icon" type="image/svg" href="./assets/images/favicon.svg" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./script/main.js" async></script>
+    <script src="./script/modernizr-custom.js" async></script>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB80Bd0BgcrdE-qc14uPu2XsyyOad0NkM8&callback=initMap"
       type="text/javascript"
@@ -94,51 +98,49 @@
         </h2>
         <ul class="page__section--second__vehicles--container">
           <li class="page__section--second__vehicles">
-            <img
-              class="page__section--second__vehicles--image"
-              src="./assets/images/PKE250_H30.png"
-              alt=""
-            />
+            <picture class="page__section--second__vehicles--image">
+              <source
+                type="image/webp"
+                srcset="./assets/images/PKE250_H30.webp"
+              />
+              <img src="./assets/images/PKE250_H30.png" alt="" />
+            </picture>
             <div class="page__section--second__vehicles--name">
               <h3>UD Trucks Croner PKE250 H30</h3>
             </div>
           </li>
           <li class="page__section--second__vehicles">
-            <img
-              class="page__section--second__vehicles--image"
-              src="./assets/images/FTR580.png"
-              alt=""
-            />
+            <picture class="page__section--second__vehicles--image">
+              <source type="image/webp" srcset="./assets/images/FTR580.webp" />
+              <img src="./assets/images/FTR580.png" alt="" />
+            </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Isuzu FTR 850</h3>
             </div>
           </li>
           <li class="page__section--second__vehicles">
-            <img
-              class="page__section--second__vehicles--image"
-              src="./assets/images/NQR500.png"
-              alt=""
-            />
+            <picture class="page__section--second__vehicles--image">
+              <source type="image/webp" srcset="./assets/images/NQR500.webp" />
+              <img src="./assets/images/NQR500.png" alt="" />
+            </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Isuzu NQR 500</h3>
             </div>
           </li>
           <li class="page__section--second__vehicles">
-            <img
-              class="page__section--second__vehicles--image"
-              src="./assets/images/Dyna.png"
-              alt=""
-            />
+            <picture class="page__section--second__vehicles--image">
+              <source type="image/webp" srcset="./assets/images/Dyna.webp" />
+              <img src="./assets/images/Dyna.png" alt="" />
+            </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Toyota Dyna</h3>
             </div>
           </li>
           <li class="page__section--second__vehicles">
-            <img
-              class="page__section--second__vehicles--image"
-              src="./assets/images/Doblo.png"
-              alt=""
-            />
+            <picture class="page__section--second__vehicles--image">
+              <source type="image/webp" srcset="./assets/images/Doblo.webp" />
+              <img src="./assets/images/Doblo.png" alt="" />
+            </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Fiat Doblo fourgon</h3>
             </div>
@@ -201,11 +203,13 @@
             </li>
           </ul>
         </div>
-        <img
-          class="page__section--third__img"
-          src="./assets/images/third_section_image.png"
-          alt=""
-        />
+        <picture class="page__section--third__img">
+          <source
+            type="image/webp"
+            srcset="./assets/images/third_section_image.webp"
+          />
+          <img src="./assets/images/third_section_image.png" alt="" />
+        </picture>
       </section>
       <section
         aria-labelledby="the-refrigeration-specialist"
@@ -236,11 +240,13 @@
             </p>
           </li>
           <li class="page__section--fourth__information">
-            <img
-              class="page__section--fourth__information__img"
-              src="./assets/images/fourth_section_image.png"
-              alt=""
-            />
+            <picture class="page__section--fourth__information__img">
+              <source
+                type="image/webp"
+                srcset="./assets/images/fourth_section_image.webp"
+              />
+              <img src="./assets/images/fourth_section_image.png" alt="" />
+            </picture>
           </li>
           <li class="page__section--fourth__information">
             <h3 class="page__section--fourth__information__subtitle">
@@ -279,11 +285,11 @@
         id="full-service"
       >
         <span class="page__section--fifth__img--container">
-          <img
-            class="page__section--fifth__img"
-            src="./assets/images/character.png"
-            alt=""
-        /></span>
+          <picture class="page__section--fifth__img">
+            <source type="image/webp" srcset="./assets/images/character.webp" />
+            <img src="./assets/images/character.png" alt="" />
+          </picture>
+        </span>
         <div class="page__section--fifth__information--container">
           <h2 class="page__section--fifth__title">Full service !</h2>
           <ul class="page__section--fifth__information">
@@ -353,11 +359,13 @@
       >
         <div>
           <h2 class="page__section--sixth__title">Contact us</h2>
-          <img
-            class="page__section--sixth__img"
-            src="./assets/images/contact_section_image.png"
-            alt=""
-          />
+          <picture class="page__section--sixth__img">
+            <source
+              type="image/webp"
+              srcset="./assets/images/contact_section_image.webp"
+            />
+            <img src="./assets/images/contact_section_image.png" alt="" />
+          </picture>
           <h3 class="page__section--sixth__subtitle">
             For more information, please don’t hesitate to get in touch with
             William :

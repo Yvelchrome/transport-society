@@ -518,12 +518,29 @@
 }
 
 @media screen and (min-width: 54.375em) {
+  .webp {
+    .page__section--fifth {
+      background-image: url("../assets/images/full_service_desktop.webp");
+    }
+  }
+
+  .no-webp {
+    .page__section--fifth {
+      background-image: url("../assets/images/full_service_desktop.png");
+    }
+  }
+
+  .no-js {
+    .page__section--fifth {
+      background-image: url("../assets/images/full_service_desktop.png");
+    }
+  }
+
   .page {
     &__section {
       &--fifth {
         margin-top: 15.625rem;
-        background: url("../assets/images/full_service_desktop.png") 10% 100%
-          no-repeat $primary-light;
+        background: 10% 100% no-repeat $primary-light;
         padding: 3.125em 0 3.125em 19.375em;
         &__img {
           position: relative;
@@ -555,11 +572,28 @@
 }
 
 @media screen and (min-width: 64em) {
+  .webp {
+    .page__section--first {
+      background-image: url("../assets/images/first_section_container.webp");
+    }
+  }
+
+  .no-webp {
+    .page__section--first {
+      background-image: url("../assets/images/first_section_container.png");
+    }
+  }
+
+  .no-js {
+    .page__section--first {
+      background-image: url("../assets/images/first_section_container.png");
+    }
+  }
+
   .page {
     &__section {
       &--first {
-        background: url("../assets/images/first_section_container.png") 55% 100%
-          no-repeat $primary-green;
+        background: 55% 100% no-repeat $primary-green;
         &__button {
           padding: 0.9375rem 3em;
         }
