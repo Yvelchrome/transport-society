@@ -595,20 +595,62 @@
 
 @media screen and (min-width: 64em) {
   .webp {
-    .page__section--first {
-      background-image: url("../assets/images/first_section_container.webp");
+    @keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.webp");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.webp");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.webp");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.webp");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.webp");
+      }
     }
   }
 
   .no-webp {
-    .page__section--first {
-      background-image: url("../assets/images/first_section_container.png");
+    @keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.png");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.png");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.png");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
     }
   }
 
   .no-js {
-    .page__section--first {
-      background-image: url("../assets/images/first_section_container.png");
+    @keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.png");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.png");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.png");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
     }
   }
 
@@ -616,6 +658,7 @@
     &__section {
       &--first {
         background: 55% 100% no-repeat $primary-green;
+        animation: hero_header_images 40s infinite;
         &__button {
           padding: 0.9375rem 3em;
         }
