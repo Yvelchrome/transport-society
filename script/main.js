@@ -279,7 +279,7 @@ function initMap() {
   ];
   const markers = {
     marker: {
-      icon: "../assets/images/marker.svg",
+      icon: "../assets/images/icons/marker.svg",
     },
   };
   const options = {
