@@ -79,11 +79,6 @@ html {
   padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 ul,
 li {
   list-style-type: none;
@@ -96,18 +91,22 @@ select {
   outline: none;
   box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 
 button,
-input[type=submit],
-select {
+input[type=submit] {
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 button:hover,
-input[type=submit]:hover,
-select:hover {
+input[type=submit]:hover {
   filter: brightness(0.9);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar {
@@ -146,6 +145,9 @@ select:hover {
 }
 .navbar__links {
   display: none;
+}
+.navbar__links--link:hover:not(:last-child) {
+  color: hsl(138deg, 100%, 33%);
 }
 .navbar__links--link__dropdown:hover {
   cursor: pointer;
@@ -258,6 +260,10 @@ select:hover {
 .page__section--second__vehicles--image {
   align-self: center;
   justify-self: center;
+  transition: all 0.3s ease;
+}
+.page__section--second__vehicles--image:hover {
+  transform: scale(1.2);
 }
 .page__section--second__vehicles--name {
   display: flex;
@@ -369,6 +375,14 @@ select:hover {
   color: hsl(0deg, 0%, 22%);
   font-size: clamp(0.6rem, 3.8vw, 1.125rem);
   line-height: 30px;
+}
+.page__section--sixth__description .contact-link {
+  font-size: clamp(0.6rem, 3.8vw, 1.125rem);
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+}
+.page__section--sixth__description .contact-link:hover {
+  color: hsl(138deg, 100%, 33%);
 }
 .page__section--sixth__form {
   display: grid;
@@ -493,6 +507,11 @@ select:hover {
   justify-content: center;
   gap: 0.3125rem;
   padding: 1.5em 0 1.5em 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+.page__section--seventh__agencies__item:not(:first-child):hover {
+  background-color: hsl(0deg, 0%, 93%);
+  cursor: pointer;
 }
 .page__section--seventh__agencies__item--main {
   background-color: hsl(0deg, 0%, 93%);
@@ -541,6 +560,9 @@ select:hover {
   font-weight: 400;
   font-size: clamp(0.625rem, 3.3vw, 1rem);
   font-family: "Poppins", sans-serif;
+}
+.footer__policy__text:hover {
+  color: hsl(138deg, 100%, 33%);
 }
 
 @media screen and (min-width: 35em) {
@@ -617,17 +639,60 @@ select:hover {
   }
 }
 @media screen and (min-width: 64em) {
-  .webp .page__section--first {
-    background-image: url("../assets/images/first_section_container.webp");
+  @keyframes hero_header_images {
+    0% {
+      background-image: url("../assets/images/hero_header/hero_image_1.webp");
+    }
+    25% {
+      background-image: url("../assets/images/hero_header/hero_image_2.webp");
+    }
+    50% {
+      background-image: url("../assets/images/hero_header/hero_image_3.webp");
+    }
+    75% {
+      background-image: url("../assets/images/hero_header/hero_image_4.webp");
+    }
+    100% {
+      background-image: url("../assets/images/hero_header/hero_image_1.webp");
+    }
   }
-  .no-webp .page__section--first {
-    background-image: url("../assets/images/first_section_container.png");
+  @keyframes hero_header_images {
+    0% {
+      background-image: url("../assets/images/hero_header/hero_image_1.png");
+    }
+    25% {
+      background-image: url("../assets/images/hero_header/hero_image_2.png");
+    }
+    50% {
+      background-image: url("../assets/images/hero_header/hero_image_3.png");
+    }
+    75% {
+      background-image: url("../assets/images/hero_header/hero_image_4.png");
+    }
+    100% {
+      background-image: url("../assets/images/hero_header/hero_image_1.png");
+    }
   }
-  .no-js .page__section--first {
-    background-image: url("../assets/images/first_section_container.png");
+  @keyframes hero_header_images {
+    0% {
+      background-image: url("../assets/images/hero_header/hero_image_1.png");
+    }
+    25% {
+      background-image: url("../assets/images/hero_header/hero_image_2.png");
+    }
+    50% {
+      background-image: url("../assets/images/hero_header/hero_image_3.png");
+    }
+    75% {
+      background-image: url("../assets/images/hero_header/hero_image_4.png");
+    }
+    100% {
+      background-image: url("../assets/images/hero_header/hero_image_1.png");
+    }
   }
   .page__section--first {
     background: 55% 100% no-repeat hsl(149deg, 96%, 32%);
+    animation: hero_header_images 40s infinite;
   }
   .page__section--first__button {
     padding: 0.9375rem 3em;
