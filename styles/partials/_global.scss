@@ -17,7 +17,7 @@ li {
 }
 
 button,
-input,
+input:not([type="checkbox"]):not([type="radio"]),
 select {
   appearance: none;
   outline: none;

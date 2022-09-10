@@ -298,50 +298,6 @@
           grid-column: span 2;
         }
         input {
-          &[type="checkbox"] {
-            display: grid;
-            place-content: center;
-            border: 1px solid $primary-dark;
-            border-radius: 3px;
-            background-color: $primary-light;
-            width: 2.15em;
-            height: 1.15em;
-            color: $primary-dark;
-            &::before {
-              transform: scale(0);
-              transition: 120ms transform ease-in-out;
-              box-shadow: inset 1.15em 1.15em $primary-dark;
-              border-radius: 2px;
-              width: 0.8em;
-              height: 0.8em;
-              content: "";
-            }
-            &:checked::before {
-              transform: scale(1);
-            }
-          }
-          &[type="radio"] {
-            display: grid;
-            place-content: center;
-            border: 1px solid $primary-dark;
-            border-radius: 50%;
-            background-color: $primary-light;
-            width: 1.15em;
-            height: 1.15em;
-            color: $primary-dark;
-            &::before {
-              transform: scale(0);
-              transition: 120ms transform ease-in-out;
-              box-shadow: inset 1.15em 1.15em $primary-dark;
-              border-radius: 50%;
-              width: 0.8em;
-              height: 0.8em;
-              content: "";
-            }
-            &:checked::before {
-              transform: scale(1);
-            }
-          }
           &[type="text"],
           &[type="email"],
           &[type="tel"] {
