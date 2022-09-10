@@ -2,6 +2,7 @@
 
 .navbar {
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   justify-content: space-between;
@@ -254,6 +255,7 @@
       }
       &__information {
         display: grid;
+        grid-template: -webkit-max-content / repeat(1, 1fr);
         grid-template: max-content / repeat(1, 1fr);
         gap: 0.9rem;
         &--container {
@@ -295,6 +297,7 @@
       }
       &__form {
         display: grid;
+        grid-template: -webkit-max-content / repeat(2, minmax(8.5rem, 1fr));
         grid-template: max-content / repeat(2, minmax(8.5rem, 1fr));
         place-content: center;
         gap: 1.5625rem 5%;
@@ -336,6 +339,8 @@
             .dropdownArrow {
               position: relative;
               top: 2rem;
+              -webkit-filter: invert(66%) sepia(0%) saturate(593%)
+                hue-rotate(138deg) brightness(93%) contrast(81%);
               filter: invert(66%) sepia(0%) saturate(593%) hue-rotate(138deg)
                 brightness(93%) contrast(81%);
             }
@@ -443,6 +448,7 @@
     &__section {
       &--third {
         &__statistics {
+          grid-template: max-content/repeat(3, -webkit-max-content);
           grid-template: max-content/repeat(3, max-content);
           gap: 20% 15%;
         }
@@ -459,6 +465,7 @@
         justify-content: start;
         margin-top: 9.375rem;
         &__information {
+          grid-template: -webkit-max-content / repeat(2, 1fr);
           grid-template: max-content / repeat(2, 1fr);
           gap: 1.875rem 2.5rem;
           max-width: 70ch;
@@ -477,6 +484,7 @@
       &--second {
         &__vehicles {
           &--container {
+            grid-template: -webkit-max-content / repeat(2, 1fr);
             grid-template: max-content / repeat(2, 1fr);
             gap: 2.5rem;
             padding: 0 3.125em;
@@ -552,6 +560,23 @@
 
 @media screen and (min-width: 64em) {
   .webp {
+    @-webkit-keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.webp");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.webp");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.webp");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.webp");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.webp");
+      }
+    }
     @keyframes hero_header_images {
       0% {
         background-image: url("../assets/images/hero_header/hero_image_1.webp");
@@ -572,6 +597,23 @@
   }
 
   .no-webp {
+    @-webkit-keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.png");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.png");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.png");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+    }
     @keyframes hero_header_images {
       0% {
         background-image: url("../assets/images/hero_header/hero_image_1.png");
@@ -592,6 +634,23 @@
   }
 
   .no-js {
+    @-webkit-keyframes hero_header_images {
+      0% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+      25% {
+        background-image: url("../assets/images/hero_header/hero_image_2.png");
+      }
+      50% {
+        background-image: url("../assets/images/hero_header/hero_image_3.png");
+      }
+      75% {
+        background-image: url("../assets/images/hero_header/hero_image_4.png");
+      }
+      100% {
+        background-image: url("../assets/images/hero_header/hero_image_1.png");
+      }
+    }
     @keyframes hero_header_images {
       0% {
         background-image: url("../assets/images/hero_header/hero_image_1.png");
@@ -614,6 +673,7 @@
   .page {
     &__section {
       &--first {
+        -webkit-animation: hero_header_images 40s infinite ease-in;
         animation: hero_header_images 40s infinite ease-in;
         background: 55% 100% no-repeat $primary-green;
         &__button {
@@ -625,8 +685,10 @@
           grid-template-rows: 65% 1fr;
           height: 14.375rem;
           &--container {
+            -moz-column-gap: 6.25rem;
             column-gap: 6.25rem;
             row-gap: 3.125rem;
+            grid-template: -webkit-max-content / repeat(3, minmax(8.5rem, 1fr));
             grid-template: max-content / repeat(3, minmax(8.5rem, 1fr));
           }
           &:nth-child(4) {
@@ -663,6 +725,7 @@
         &__information {
           &--container {
             display: grid;
+            grid-template: -webkit-max-content / repeat(3, 1fr);
             grid-template: max-content / repeat(3, 1fr);
             gap: 10% 5%;
             padding: 0 8.4375em 0 8.4375em;
@@ -709,6 +772,7 @@
       }
       &--sixth {
         display: grid;
+        grid-template: -webkit-max-content / repeat(2, 1fr);
         grid-template: max-content / repeat(2, 1fr);
         gap: 9.375rem;
         padding: 0 10.3125em 0 3.125em;
@@ -737,6 +801,8 @@
               .dropdownArrow {
                 position: relative;
                 top: 2.375rem;
+                -webkit-filter: invert(66%) sepia(0%) saturate(593%)
+                  hue-rotate(138deg) brightness(93%) contrast(81%);
                 filter: invert(66%) sepia(0%) saturate(593%) hue-rotate(138deg)
                   brightness(93%) contrast(81%);
               }
