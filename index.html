@@ -8,6 +8,20 @@
       name="description"
       content="A landing page created in the context of a web integration test from Subskill"
     />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#000"
+    />
+    <link
+      href="https://transport-society-yvelchrome.netlify.app"
+      rel="canonical"
+    />
     <link
       rel="icon"
       type="image/svg"
@@ -49,38 +63,26 @@
           <a href="#our-agencies">Our agencies</a>
         </li>
         <li class="navbar__links--link navbar__links--link__dropdown">
-          <img src="./assets/images/icons/SA_flag.svg" alt="" class="flag" />
-          <a>South Africa</a>
+          <img class="flag" src="./assets/images/icons/SA_flag.svg" alt />
+          <a href="javascript:void(0)">South Africa</a>
           <img
-            src="./assets/images/icons/arrow.svg"
-            alt=""
             class="dropdownArrow"
+            src="./assets/images/icons/arrow.svg"
+            alt
           />
 
           <ul class="navbar__links--link__dropdown__menu">
             <li class="navbar__links--link__dropdown__menu--item">
-              <img
-                src="./assets/images/icons/SA_flag.svg"
-                alt=""
-                class="flag"
-              />
-              <a>...</a>
+              <img class="flag" src="./assets/images/icons/SA_flag.svg" alt />
+              <a href="javascript:void(0)">...</a>
             </li>
             <li class="navbar__links--link__dropdown__menu--item">
-              <img
-                src="./assets/images/icons/SA_flag.svg"
-                alt=""
-                class="flag"
-              />
-              <a>...</a>
+              <img class="flag" src="./assets/images/icons/SA_flag.svg" alt />
+              <a href="javascript:void(0)">...</a>
             </li>
             <li class="navbar__links--link__dropdown__menu--item">
-              <img
-                src="./assets/images/icons/SA_flag.svg"
-                alt=""
-                class="flag"
-              />
-              <a>...</a>
+              <img class="flag" src="./assets/images/icons/SA_flag.svg" alt />
+              <a href="javascript:void(0)">...</a>
             </li>
           </ul>
         </li>
@@ -91,28 +93,19 @@
         <span class="navbar__hamburger__line navbar__hamburger__line--3"></span>
       </div>
     </nav>
-
+    <header class="page__section page__section--first">
+      <h1 class="page__section--first__title">Refrigerated vehicle rental</h1>
+      <p class="page__section--first__description">
+        When you need to transport chilled or frozen products, Petit Forestier
+        offers a full range of vehicles for hire on a short, medium or long-term
+        basis.
+      </p>
+      <button class="page__section--first__button">
+        Download our brochure
+      </button>
+    </header>
     <main class="page">
-      <section
-        aria-labelledby="hero-header"
-        class="page__section page__section--first"
-        id="hero-header"
-      >
-        <h1 class="page__section--first__title">Refrigerated vehicle rental</h1>
-        <p class="page__section--first__description">
-          When you need to transport chilled or frozen products, Petit Forestier
-          offers a full range of vehicles for hire on a short, medium or
-          long-term basis.
-        </p>
-        <button class="page__section--first__button">
-          Download our brochure
-        </button>
-      </section>
-      <section
-        aria-labelledby="our-vehicles"
-        class="page__section page__section--second"
-        id="our-vehicles"
-      >
+      <section class="page__section page__section--second" id="our-vehicles">
         <h2 class="page__section--second__title">
           Our current range of vehicles
         </h2>
@@ -123,7 +116,7 @@
                 type="image/webp"
                 srcset="./assets/images/trucks/PKE250_H30.webp"
               />
-              <img src="./assets/images/trucks/PKE250_H30.png" alt="" />
+              <img src="./assets/images/trucks/PKE250_H30.png" alt />
             </picture>
             <div class="page__section--second__vehicles--name">
               <h3>UD Trucks Croner PKE250 H30</h3>
@@ -135,7 +128,7 @@
                 type="image/webp"
                 srcset="./assets/images/trucks/FTR580.webp"
               />
-              <img src="./assets/images/trucks/FTR580.png" alt="" />
+              <img src="./assets/images/trucks/FTR580.png" alt />
             </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Isuzu FTR 850</h3>
@@ -147,7 +140,7 @@
                 type="image/webp"
                 srcset="./assets/images/trucks/NQR500.webp"
               />
-              <img src="./assets/images/trucks/NQR500.png" alt="" />
+              <img src="./assets/images/trucks/NQR500.png" alt />
             </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Isuzu NQR 500</h3>
@@ -159,7 +152,7 @@
                 type="image/webp"
                 srcset="./assets/images/trucks/Dyna.webp"
               />
-              <img src="./assets/images/trucks/Dyna.png" alt="" />
+              <img src="./assets/images/trucks/Dyna.png" alt />
             </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Toyota Dyna</h3>
@@ -171,7 +164,7 @@
                 type="image/webp"
                 srcset="./assets/images/trucks/Doblo.webp"
               />
-              <img src="./assets/images/trucks/Doblo.png" alt="" />
+              <img src="./assets/images/trucks/Doblo.png" alt />
             </picture>
             <div class="page__section--second__vehicles--name">
               <h3>Fiat Doblo fourgon</h3>
@@ -180,7 +173,6 @@
         </ul>
       </section>
       <section
-        aria-labelledby="about-transport-society"
         class="page__section page__section--third"
         id="about-transport-society"
       >
@@ -248,7 +240,6 @@
         </picture>
       </section>
       <section
-        aria-labelledby="the-refrigeration-specialist"
         class="page__section page__section--fourth"
         id="the-refrigeration-specialist"
       >
@@ -315,11 +306,7 @@
           </li>
         </ul>
       </section>
-      <section
-        aria-labelledby="full-service"
-        class="page__section page__section--fifth"
-        id="full-service"
-      >
+      <section class="page__section page__section--fifth" id="full-service">
         <span class="page__section--fifth__img--container">
           <picture class="page__section--fifth__img">
             <source type="image/webp" srcset="./assets/images/character.webp" />
@@ -388,11 +375,7 @@
           </button>
         </div>
       </section>
-      <section
-        aria-labelledby="contact-us"
-        class="page__section page__section--sixth"
-        id="contact-us"
-      >
+      <section class="page__section page__section--sixth" id="contact-us">
         <div>
           <h2 class="page__section--sixth__title">Contact us</h2>
           <picture class="page__section--sixth__img">
@@ -545,7 +528,7 @@
               placeholder="Your message"
               class="page__section--sixth__form__input"
           /></label>
-          <div class="page__section--sixth__form__promotional span-col2">
+          <label class="page__section--sixth__form__promotional span-col2">
             <input
               type="checkbox"
               name="promotional"
@@ -557,7 +540,7 @@
               d'information, vous souhaitez recevoir d'autres communications de
               notre part.*
             </p>
-          </div>
+          </label>
           <input
             type="submit"
             value="Submit"
@@ -565,11 +548,7 @@
           />
         </form>
       </section>
-      <section
-        aria-labelledby="our-agencies"
-        class="page__section page__section--seventh"
-        id="our-agencies"
-      >
+      <section class="page__section page__section--seventh" id="our-agencies">
         <div class="page__section--seventh__agencies--container">
           <ul class="page__section--seventh__agencies">
             <li
@@ -672,9 +651,15 @@
         </p>
       </div>
       <div class="footer__policy">
-        <a class="footer__policy__text" href="#">Legal notice</a>
-        <a class="footer__policy__text" href="#">private policy</a>
-        <a class="footer__policy__text" href="#">© 2022 Transport society</a>
+        <a class="footer__policy__text" href="javascript:void(0)"
+          >Legal notice</a
+        >
+        <a class="footer__policy__text" href="javascript:void(0)"
+          >private policy</a
+        >
+        <a class="footer__policy__text" href="javascript:void(0)"
+          >© 2022 Transport society</a
+        >
       </div>
     </footer>
   </body>
